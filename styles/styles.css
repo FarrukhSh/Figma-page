@@ -1,0 +1,811 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+section {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1400px;
+    max-height: 1200px;
+
+}
+
+.social-link {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 400px;
+    left: 30px;
+}
+
+.facebook {
+    padding-bottom: 30px;
+    display: flex;
+    width: 27.3%;
+}
+
+.twitter {
+    padding-bottom: 30px;
+    display: flex;
+    width: 33.3%;
+}
+
+.instagram {
+    padding-bottom: 30px;
+    display: flex;
+    width: 33.3%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.header-block {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    display: block;
+    width: 155px;
+}
+
+.header-list {
+    font-weight: 600;
+    list-style: none;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#drop-down-menu-button {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 20px;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-button-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.menu-button-line:first-child {
+    width: 35px;
+}
+.menu-button-line:nth-child(2)  {
+    width: 30px;
+}
+
+
+.hero-block {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgroun-destination.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text {
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-subheading {
+    font-size: 3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hero-heading {
+    font-size: 15vw;
+    font-weight: 600;
+}
+
+.hero-destinations {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.hero-destinations-block {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-destinations-block:hover {
+    cursor: pointer;
+    background-color: rgba(6, 48, 1, 0.9);
+}
+
+.destination-block-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.destination-block-text h4 {
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.destination-block-text h5 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.scroll-block {
+    z-index: 1;
+    width: 5px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 350px;
+    right: 30px;
+    background-image: url(../images/Rectangle\ 16sss.png);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.75);
+    border: 2px solid blue;
+}
+
+.scroll-link:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(171, 255, 185, 0.75);
+    height: 380px;
+}
+
+.scroll-destination {
+    width: 5px;
+    height: 70px;
+    display: flex;
+    background-image: url(../images/Rectangle\ 17scroll.png)
+}
+
+.scroll-destination:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(202, 59, 2, 0.95);
+    height: 80px;
+}
+
+.scroll-activities {
+    width: 5px;
+    height: 70px;
+    display: flex;
+    background-image: url(../images/Rectangle\ 17scroll.png)
+}
+
+.scroll-activities:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(202, 59, 2, 0.95);
+    height: 80px;
+}
+
+.scroll-about {
+    width: 5px;
+    height: 70px;
+    display: flex;
+    background-image: url(../images/Rectangle\ 17scroll.png);
+}
+
+.scroll-about:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(202, 59, 2, 0.95);
+    height: 80px;
+}
+
+.scroll-about img {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 16px;
+    height: 10px;
+    animation: arrow 5s ease-in infinite;
+}
+
+
+@keyframes arrow {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 350px;
+        opacity: 0.9;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.scroll-hotels {
+    width: 5px;
+    height: 70px;
+    display: flex;
+    background-image: url(../images/Rectangle\ 17scroll.png)
+}
+
+.scroll-hotels:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(202, 59, 2, 0.95);
+    height: 80px;
+}
+
+.scroll-network {
+    width: 5px;
+    height: 70px;
+    display: flex;
+    background-image: url(../images/Rectangle\ 17scroll.png)
+}
+
+.scroll-network:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 4px rgba(202, 59, 2, 0.95);
+    height: 80px;
+}
+
+.see-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 82vh;
+    justify-content: flex-end;
+}
+
+.see-more-text {
+    position: absolute;
+    /* left: -20px; */
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+    transform: rotate(-90.49deg);
+}
+
+.arrow-down {
+    display: flex;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+    width: 10px;
+    height: 70px;
+    animation: move 2s ease-out infinite;
+    position: absolute;
+    margin-top: 50px;
+}
+
+@keyframes move {
+    0% {
+        top: -10px;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+.activities {
+    padding-top: 80px;
+}
+
+.activities-headings {
+    text-align: center;
+    color: black;
+}
+
+.activities-headings h3 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 23px;
+}
+
+.activities-headings h2 {
+    font-size: 46px;
+    margin-bottom: 110px;
+}
+
+.activities-blocks {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-bottom: 100px;
+
+}
+
+.activity-block {
+    margin: 10px;
+    width: 200px;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.activity-block:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    height: 404px;
+}
+
+.activity-block:first-child {
+    background-image: url('../images/activities-bg1.jpg');
+    background-position: center;
+    background-size: cover
+}
+
+.activity-block:nth-child(2) {
+    background-image: url('../images/maxresdefault.jpg');
+    background-size: cover;
+}
+
+.activity-block:nth-child(3) {
+    background-image: url('../images/skiing.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-block:last-child {
+    background-image: url('../images/kayaking.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-block__title {
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    width: max-content;
+    background-color: rgba(3, 70, 29, 0.5);
+
+
+}
+
+.activity-numbers {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    width: max-content;
+    background-color: rgba(105, 66, 247, 0.8);
+}
+
+.about {
+    padding-top: 80px;
+    /* width: 1920px; */
+}
+
+.about-blocks {
+    display: flex;
+    /* margin-bottom: 30px; */
+}
+
+.about-block {
+    width: 100%;
+    height: 582px;
+}
+
+.about-block img {
+    display: flex;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 582px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.about-block img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    height: 584px;
+}
+
+.about-Text {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-family: Montserrat;
+    padding-left: 90px;
+}
+
+.about-list li {
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    line-height: 32px;
+    marker-start: unset;
+    color: #9b9b9b;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+.head-of-our-philosophy {
+    padding-top: 10px;
+}
+
+.about-list h5 {
+    padding-left: 30px;
+    font-size: 32px;
+    line-height: 39px;
+    color: #3d3d3d;
+    font-weight: 700;
+}
+
+.our-philosophy {
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 30px;
+    line-height: 13px;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.hotels {
+    padding-top: 80px;
+    /* width: 1920px; */
+}
+
+.hotels-block {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 351px;
+    height: 620px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.hotels-blocks {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 80vw;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.hotel-block {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+}
+.hotel-block:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    width: 605px;
+    height: 505;
+}
+.layer-hotel {
+    max-width: 100%;
+    height: 550px;
+    background-color: #f4f4f4;
+    background-position: bottom;
+    position: relative;
+    top: -280px;
+    z-index: -1;
+    padding-bottom: 0;
+}
+
+.hotel-block:first-child {
+    background-image: url("../images/hulbuk.jpg");
+}
+
+.hotel-block:nth-child(2) {
+    background-image: url("../images/hujand.jpg");
+}
+
+.hotel-block:nth-child(3) {
+    background-image: url("../images/iskandarkul.webp");
+}
+
+.yellow-star {
+    display: flex;
+    position: absolute;
+    top: 360px;
+    left: 14vw;
+    width: 1vw;
+    /* height: 1vh; */
+}
+
+.state-name h2 {
+    position: absolute;
+    width: 90px;
+    height: 37px;
+    top: 350px;
+    right: auto;
+    bottom: auto;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+.price-ticket {
+    position: absolute;
+    width: 49px;
+    height: 24px;
+    top: 400px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #959595;
+}
+
+.search-form {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 200px;
+    justify-content: center;
+
+}
+
+.entry-field {
+    display: flex;
+    width: 20vw;
+    margin: 15px 3vw 0 0;
+    padding: 1vw;
+}
+
+.search-bar {
+    margin: 0;
+    display: flex;
+    color: #9B9B9B;
+    top: 50px;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 20px;
+}
+
+.submit-button-in {
+    background: #3D3D3D;
+    border-radius: 5px;
+    color: white;
+}
+
+.network {
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+
+.platforms {
+    display: flex;
+    align-items: center
+}
+
+.comment-block {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/backgroun-destinatio2n.jpg);
+    background-size: cover;
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+}
+.comment-text {
+    margin: 30px;
+    padding: 3vw;
+    display: flex;
+    font-size: 1.1vw;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.comment-text:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+}
+.comment-text h1 {
+    color:#FF9921;
+}
+
+.comment-text::after {
+    content: '';
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: 20px;
+    bottom: -20px;
+    /* Положение треугольника */
+    border: 10px solid transparent;
+    /* Прозрачные границы */
+    border-top: 10px solid rgb(255, 255, 255);
+    /* Добавляем треугольник */
+}
+.user-data {
+    display: flex;
+    align-items:center
+}
+.user-data p {
+    background: rgba(4, 2, 168, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+.user-data img {
+    width: 120px;
+    height: 120px;
+    border-radius: 80%;
+}
+.user-data img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+    width: 320px;
+    height: 320px;
+}
+footer {
+    background: #F4F4F4;
+    height: 500px;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.logo {
+    width: 190px;
+    height: 160px;
+}
+.footer-list {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.footer-list ul {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+.footer-list a {
+    display: flex;
+    flex-wrap: row wrap;
+    padding: 15px 15px 0 15px;
+    font-weight: 600;
+    color: #6D6D6D;
+}
+.footer-about {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.footer-social-link {
+    display: flex;
+}
+.footer-social-link img {
+    border-radius: 52%;
+    width: 50px;
+}
+.signature {
+    color: black;
+}
+@media only screen and (max-width: 720px) {
+
+    /* body {
+      background-color: rgb(153, 211, 228);
+    } */
+    /* тут исчезает навигационная панель */
+    .header-list {
+        display: none;
+    }
+#drop-down-menu-button {
+    display: flex;
+}
+    /* тут появляется кнопка вместо навигационной панели */
+    .menu-button {
+        display: flex;
+    }
+}
